@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Syne+Mono&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Syne Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+marquee{
+    position: fixed;
+}
+
+marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+}
+.row{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-name{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.main-name{
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow:
+    -5px -1px 0 black,
+     2px -1px 0 black,
+    -5px  1px 0 black,
+     1px  1px 0 black;
+}
+
+/* *************************************************************************** */
+
+.typewriter{
+    color: #fff;
+    overflow: hidden; 
+    border-right: .15em solid rgba(0, 0, 0, ); 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+/* *************************************************************************** */
+
+
+.my-name{
+    font-size: 1rem;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+.my-btn {
+    margin-top: 25px;
+    background: #a6753c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+    cursor: pointer;
+  }
+
+  
