@@ -9,21 +9,31 @@
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <marquee>
-      <span class="text-white">This is a work of fiction. All characters, events, and actions depicted
-        in this game are purely fictional. Do not attempt to recreate or imitate
-        any in-game actions in real life. Violence and dangerous activities
-        shown are for entertainment purposes only. Play responsibly and stay
-        safe.</span
-      >
-    </marquee>
 
+    <audio id="backgroundAudio" autoplay loop muted>
+        <source src="Videos/home-voice.mp3" type="audio/mp3">
+    </audio>    
+
+
+    <div class="d-flex justify-content-between">
+
+        <button id="toggleButton" class="my-btn1 z-1">🔊 Play</button>
+        
+        <marquee>
+            <span class="text-white">This is a work of fiction. All characters, events, and actions depicted
+                in this game are purely fictional. Do not attempt to recreate or imitate
+                any in-game actions in real life. Violence and dangerous activities
+                shown are for entertainment purposes only. Play responsibly and stay
+                safe.</span>
+            </marquee>
+    </div>
+            
     <div class="container">
       <div class="row">
         <div class="col brand-name">
           <p class="main-name typewriter">Street Warriors | Karachi</p>
           <p class="my-name">(Powered by Syed Humza Salman)</p>
-          <div data-aos="zoom-in" style="transition: all 3s ease-in-out;">  
+          <div data-aos="zoom-in" style="transition: all 3s ease-in-out;">
               <button type="button" id="" class="my-btn">Start Now</button>
           </div>
         </div>

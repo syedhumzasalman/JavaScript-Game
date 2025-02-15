@@ -1,4 +1,35 @@
-document.title = "Street Warriors: Karachi"
+document.title = "Street Warriors: Karachi";
+
+window.onload = function() {
+    let audio = document.getElementById("backgroundAudio");
+    let button = document.getElementById("toggleButton");
+
+    let playPromise = audio.play();
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                audio.muted = false;
+                button.innerText = "🔇 Mute";
+            })
+        }
+
+    button.addEventListener("click", function() {
+        if (audio.muted) {
+            audio.muted = false;
+            button.innerText = "🔇 Mute";
+        } else {
+            audio.muted = true;
+            button.innerText = "🔊 Play";
+        }
+
+ 
+        if (audio.paused) {
+            audio.play();
+            body.appendChild(video);
+        }
+    });
+};
+
+
 
 
 let body = document.body;

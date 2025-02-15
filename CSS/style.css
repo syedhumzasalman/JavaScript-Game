@@ -20,7 +20,8 @@ marquee {
     width: 100%;
 }
 .row{
-    height: 100vh;
+    /* background-color: aqua; */
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,6 +90,20 @@ marquee {
     color: white;
     padding: 10px 20px;
     font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+    cursor: pointer;
+  }
+
+  .my-btn1 {
+    background: #a6753c;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
     font-weight: bold;
     border: none;
     text-align: center;
