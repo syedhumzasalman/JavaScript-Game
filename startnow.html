@@ -29,6 +29,21 @@
             <div class="vs">
                 <img src="images/vs-.png" alt="">
             </div>
+
+            <button class="my-btn1" onclick="openLocationSelection()" type="submit" id="slocation">Select Location</button>
+
+            <div id="locationModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeLocationSelection()">&times;</span>
+                    <h2>Select Your Location</h2>
+                    <div class="carousel">
+                        <img class="location-img" src="images/location1.webp" onclick="startGame('location1.webp')">
+                        <img class="location-img" src="images/location2.webp" onclick="startGame('location2.webp')">
+                        <img class="location-img" src="images/location3.webp" onclick="startGame('location3.webp')">
+                    </div>
+                </div>
+            </div>
+
             <div  id="bigCharsec" class="bigCharone1">
                 <img class="" src="https://www.fightersgeneration.com/characters/dio-walkb3.gif" alt="">
             </div>
@@ -54,5 +69,6 @@
     </div>
 
     <script src="JS/startnow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

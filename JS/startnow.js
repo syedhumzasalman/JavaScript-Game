@@ -1,8 +1,9 @@
 document.title = "Start Now";
 
+let audio = document.getElementById("backgroundAudio");
+let button = document.getElementById("toggleButton");
+
 window.onload = function() {
-    let audio = document.getElementById("backgroundAudio");
-    let button = document.getElementById("toggleButton");
 
     let pleasePlay = audio.play();
         if (pleasePlay !== undefined) {
@@ -29,18 +30,6 @@ window.onload = function() {
     });
 };
 
-// *********************************************************************//
-
-document.addEventListener("DOMContentLoaded", function () {
-    let sec3 = document.getElementById("sec3");
-    sec3.style.opacity  = "0";
-    sec3.style.transition = "opacity 1s ease-in-out";
-    
-    setTimeout(() => {
-        sec3.style.opacity = "1";
-    }, 3000);
-    
-    });
 
 
 // ************************************************************************** //
@@ -131,6 +120,7 @@ let characters = {
 
 
 let container = document.getElementById("boxContainer");
+let bigCharone = document.getElementById("bigCharone");
 
 // idhar ik loop chal raha he phale wale boxContainer pe
 
@@ -142,7 +132,6 @@ for (let key in characters) {
     img.src = characters[key];
     
     img.addEventListener("click", function(){
-        let bigCharone = document.getElementById("bigCharone");
 
         if(!bigCharone){
             bigCharone = document.createElement("div");
@@ -175,6 +164,7 @@ let characters2 = {
 // idhar ik loop chal raha he second wale boxContainer1 pe
 
 let mycontainer = document.getElementById("boxContainer1");
+let bigCharsec = document.getElementById("bigCharsec");
 
 for (let key in characters2) {
     let box = document.createElement("div");
@@ -184,7 +174,6 @@ for (let key in characters2) {
     img.src = characters2[key];
 
     img.addEventListener("click", function(){
-        let bigCharsec = document.getElementById("bigCharsec");
 
         if(!bigCharsec){
             bigCharsec = document.createElement("div");
@@ -201,3 +190,50 @@ for (let key in characters2) {
 }
 
 }, 3000);
+
+
+let slocation = document.getElementById("slocation");
+
+
+function openLocationSelection() {
+    document.getElementById("locationModal").style.display = "block";
+}
+
+function closeLocationSelection() {
+    document.getElementById("locationModal").style.display = "none";
+}
+
+
+
+// function startGame(selectedLocation) {
+    
+//     closeLocationSelection();
+//     document.body.innerHTML = "";
+
+//     Swal.fire({
+//         title: 'LET THE BATTLE BEGIN!.',
+//         text: 'The stage of battle is set!',
+//         allowOutsideClick: false,
+//         didOpen: () => {
+//             Swal.showLoading();
+//         }
+//     });
+
+//     setTimeout(() => {
+//         Swal.close();
+        
+//         document.body.style.backgroundImage = `url('images/${selectedLocation}')`;
+//         document.body.style.backgroundSize = "cover";
+//         document.body.style.backgroundPosition = "center";
+//         document.body.style.backgroundRepeat = "no-repeat";
+//         document.body.style.height = "100vh";
+//         document.body.style.width = "100vw";
+//         document.body.style.zIndex = "0";
+    
+//     audio.pause();
+//     audio.currentTime = 0;
+
+//     let fightAudio = new Audio("Videos/fight-sound-effect-230560.mp3");
+//     fightAudio.play();
+// }, 3000); 
+// }

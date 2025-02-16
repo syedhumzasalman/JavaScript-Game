@@ -28,6 +28,7 @@ body{
 }
 
 .vs{
+    /* background-color: aqua; */
     position: absolute;
     left: 230px;
 }
@@ -108,6 +109,52 @@ body{
     clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
     cursor: pointer;
   }
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.location-img {
+    width: 150px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.location-img:hover {
+    border: 2px solid red;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 40px;
+    color: red;
+}
+
   
   
 
