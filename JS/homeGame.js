@@ -1,30 +1,6 @@
 document.title = "Street Warriors: Karachi";
 
 
-    let audio = document.getElementById("backgroundAudio");
-    let button = document.getElementById("toggleButton");
-
-
-    button.addEventListener("click", function() {
-        if (audio.muted) {
-            audio.muted = false;
-            button.innerText = "🔇 Mute";
-        } else {
-            audio.muted = true;
-            button.innerText = "🔊 Play";
-        }
-
- 
-        if (audio.paused) {
-            audio.play();
-        }
-    });
-
-
-
-// ************************************************************************** //
-
-
 let body = document.body;
 
 let video = document.createElement("video");
@@ -43,3 +19,26 @@ video.style.zIndex = "-1";
 
 body.appendChild(video);
 
+
+let audio = document.getElementById("backgroundAudio");
+let button = document.getElementById("toggleButton");
+
+
+button.addEventListener("click", function() {
+    if (audio.muted) {
+        audio.muted = false;
+        button.innerText = "🔇 Mute";
+    } else {
+        audio.muted = true;
+        button.innerText = "🔊 Play";
+    }
+
+
+    if (audio.paused) {
+        audio.play();
+    }
+});
+
+
+
+// ************************************************************************** //

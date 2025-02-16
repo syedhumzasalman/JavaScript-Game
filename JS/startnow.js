@@ -86,7 +86,7 @@ setTimeout(() => {
     
 let characters = {
     image1: "https://www.fightersgeneration.com/characters/alex-shirtrip.gif",
-    image2: "https://www.fightersgeneration.com/characters/raidengif.gif",
+    image2: "https://www.fightersgeneration.com/news2023/char3/bob-wilson-realbout2-taunt.gif",
     image3: "https://www.fightersgeneration.com/characters5/blake-belladonna-artwork_small.png",
     image4: "https://www.fightersgeneration.com/nz7/char/breakers/condor-breakers-revenge-art3.png",
     image5: "https://www.fightersgeneration.com/characters4/chung-kiz_small.jpg",
