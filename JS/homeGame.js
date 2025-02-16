@@ -4,13 +4,13 @@ window.onload = function() {
     let audio = document.getElementById("backgroundAudio");
     let button = document.getElementById("toggleButton");
 
-    let pleasePlay = audio.play();
-        if (pleasePlay !== undefined) {
-            pleasePlay.then(() => {
-                audio.muted = false;
-                button.innerText = "🔇 Mute";
-            })
-        }
+    // let pleasePlay = audio.play();
+    //     if (pleasePlay !== undefined) {
+    //         pleasePlay.then(() => {
+    //             audio.muted = false;
+    //             button.innerText = "🔇 Mute";
+    //         })
+    //     }
 
     button.addEventListener("click", function() {
         if (audio.muted) {
