@@ -29,6 +29,19 @@ window.onload = function() {
     });
 };
 
+// *********************************************************************//
+
+document.addEventListener("DOMContentLoaded", function () {
+    let sec3 = document.getElementById("sec3");
+    sec3.style.opacity  = "0";
+    sec3.style.transition = "opacity 1s ease-in-out";
+    
+    setTimeout(() => {
+        sec3.style.opacity = "1";
+    }, 3000);
+    
+    });
+
 
 // ************************************************************************** //
 
@@ -83,16 +96,25 @@ body.appendChild(video);
 
 // *******************************************************************//
 
+
+// *********************************************************************//
+
 document.addEventListener("DOMContentLoaded", function () {
-let sec3 = document.getElementById("sec3");
-sec3.style.opacity  = "0";
-sec3.style.transition = "opacity 1s ease-in-out";
+    let sec3 = document.getElementById("sec3");
+    sec3.style.visibility = "hidden";
+    sec3.style.opacity  = "0";
+    sec3.style.transition = "opacity 1s ease-in-out";
+    
+    setTimeout(() => {
+        sec3.style.visibility = "visible";
+        sec3.style.opacity = "1";
+    }, 3000);
+    
+    });
 
-setTimeout(() => {
-    sec3.style.opacity = "1";
-}, 3000);
 
-});
+// ************************************************************************** //
+
 
 setTimeout(() => {
     
