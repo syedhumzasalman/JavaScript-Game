@@ -205,35 +205,20 @@ function closeLocationSelection() {
 
 
 
-// function startGame(selectedLocation) {
+
+function startGame(selectedLocation) {
+    closeLocationSelection(); 
+
+    let bigCharone = document.getElementById("bigCharone");
+    let bigCharsec = document.getElementById("bigCharsec");
+
+    let player1Character = bigCharone ? bigCharone.querySelector("img").src : "https://www.fightersgeneration.com/characters/alex-shirtrip.gif";
+    let player2Character = bigCharsec ? bigCharsec.querySelector("img").src : "https://www.fightersgeneration.com/characters/venom-webthrow.gif";
+
+    localStorage.setItem("player1Character", player1Character);
+    localStorage.setItem("player2Character", player2Character);
+    localStorage.setItem("selectedStage", selectedLocation);
+
     
-//     closeLocationSelection();
-//     document.body.innerHTML = "";
-
-//     Swal.fire({
-//         title: 'LET THE BATTLE BEGIN!.',
-//         text: 'The stage of battle is set!',
-//         allowOutsideClick: false,
-//         didOpen: () => {
-//             Swal.showLoading();
-//         }
-//     });
-
-//     setTimeout(() => {
-//         Swal.close();
-        
-//         document.body.style.backgroundImage = `url('images/${selectedLocation}')`;
-//         document.body.style.backgroundSize = "cover";
-//         document.body.style.backgroundPosition = "center";
-//         document.body.style.backgroundRepeat = "no-repeat";
-//         document.body.style.height = "100vh";
-//         document.body.style.width = "100vw";
-//         document.body.style.zIndex = "0";
-    
-//     audio.pause();
-//     audio.currentTime = 0;
-
-//     let fightAudio = new Audio("Videos/fight-sound-effect-230560.mp3");
-//     fightAudio.play();
-// }, 3000); 
-// }
+    window.location.href = "game.html";
+}
