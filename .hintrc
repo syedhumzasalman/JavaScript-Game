@@ -10,6 +10,7 @@
       }
     ],
     "no-inline-styles": "off",
-    "create-element-svg": "off"
+    "create-element-svg": "off",
+    "disown-opener": "off"
   }
 }

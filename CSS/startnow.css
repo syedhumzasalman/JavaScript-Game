@@ -11,7 +11,7 @@
 }
 
 body{
-    background: url(../images/bg3.jpg);
+    
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -20,10 +20,25 @@ body{
 
 .big-char{
     /* background-color: wheat; */
-    height: 70vh;
+    height: 65vh;
     display: flex;
     justify-content:space-between;
     align-items: end;
+}
+
+.bigCharone{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bigCharone img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
 }
 
 .mycontainer {
@@ -68,3 +83,4 @@ body{
     clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
     cursor: pointer;
   }
+  
