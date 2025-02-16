@@ -1,16 +1,9 @@
 document.title = "Street Warriors: Karachi";
 
-window.onload = function() {
+
     let audio = document.getElementById("backgroundAudio");
     let button = document.getElementById("toggleButton");
 
-    // let pleasePlay = audio.play();
-    //     if (pleasePlay !== undefined) {
-    //         pleasePlay.then(() => {
-    //             audio.muted = false;
-    //             button.innerText = "🔇 Mute";
-    //         })
-    //     }
 
     button.addEventListener("click", function() {
         if (audio.muted) {
@@ -24,10 +17,9 @@ window.onload = function() {
  
         if (audio.paused) {
             audio.play();
-            body.appendChild(video);
         }
     });
-};
+
 
 
 // ************************************************************************** //
