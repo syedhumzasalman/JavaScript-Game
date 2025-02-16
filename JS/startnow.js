@@ -1,60 +1,60 @@
 document.title = "Start Now";
 
-// window.onload = function() {
-//     let audio = document.getElementById("backgroundAudio");
-//     let button = document.getElementById("toggleButton");
+window.onload = function() {
+    let audio = document.getElementById("backgroundAudio");
+    let button = document.getElementById("toggleButton");
 
-//     let pleasePlay = audio.play();
-//         if (pleasePlay !== undefined) {
-//             pleasePlay.then(() => {
-//                 audio.muted = false;
-//                 button.innerText = "🔇 Mute";
-//             })
-//         }
+    let pleasePlay = audio.play();
+        if (pleasePlay !== undefined) {
+            pleasePlay.then(() => {
+                audio.muted = false;
+                button.innerText = "🔇 Mute";
+            })
+        }
 
-//     button.addEventListener("click", function() {
-//         if (audio.muted) {
-//             audio.muted = false;
-//             button.innerText = "🔇 Mute";
-//         } else {
-//             audio.muted = true;
-//             button.innerText = "🔊 Play";
-//         }
+    button.addEventListener("click", function() {
+        if (audio.muted) {
+            audio.muted = false;
+            button.innerText = "🔇 Mute";
+        } else {
+            audio.muted = true;
+            button.innerText = "🔊 Play";
+        }
 
  
-//         if (audio.paused) {
-//             audio.play();
-//             body.appendChild(video);
-//         }
-//     });
-// };
+        if (audio.paused) {
+            audio.play();
+            body.appendChild(video);
+        }
+    });
+};
 
 
 // ************************************************************************** //
 
 
 
-// let body = document.body;
-// let image = document.createElement("img");
+let body = document.body;
+let image = document.createElement("img");
 
-// setTimeout(function() {
-//     image.src = "images/img2.jpg";
-//     image.style.position = "fixed";
-//     image.style.top = "0";
-//     image.style.left = "0";
-//     image.style.width = "100vw";
-//     image.style.height = "100vh";
-//     image.style.objectFit = "cover";
-//     image.style.zIndex = "-1";
+setTimeout(function() {
+    image.src = "images/img2.jpg";
+    image.style.position = "fixed";
+    image.style.top = "0";
+    image.style.left = "0";
+    image.style.width = "100vw";
+    image.style.height = "100vh";
+    image.style.objectFit = "cover";
+    image.style.zIndex = "-1";
 
-//     body.appendChild(image);
-// },);
+    body.appendChild(image);
+},);
 
-// body.appendChild(image);
+body.appendChild(image);
 
-// setTimeout(function() {
-//     body.removeChild(image);
-// }, 4000);
+setTimeout(function() {
+    body.removeChild(image);
+}, 4000);
 
 
 
