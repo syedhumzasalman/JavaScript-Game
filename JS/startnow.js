@@ -182,5 +182,3 @@ for (let key in characters2) {
 }
 
 }, 3000);
-
-
