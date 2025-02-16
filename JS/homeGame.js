@@ -19,6 +19,7 @@ video.style.zIndex = "-1";
 
 body.appendChild(video);
 
+// ************************************************************************** //
 
 let audio = document.getElementById("backgroundAudio");
 let button = document.getElementById("toggleButton");
@@ -40,5 +41,3 @@ button.addEventListener("click", function() {
 });
 
 
-
-// ************************************************************************** //

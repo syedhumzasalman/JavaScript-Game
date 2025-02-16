@@ -11,6 +11,14 @@
     ],
     "no-inline-styles": "off",
     "create-element-svg": "off",
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "image-rendering: crisp-edges"
+        ]
+      }
+    ]
   }
 }

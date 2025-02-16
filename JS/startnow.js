@@ -73,6 +73,7 @@ video.style.width = "100vw";
 video.style.height = "100vh";
 video.style.objectFit = "cover";
 video.style.zIndex = "-1";
+video.style.filter = "grayscale()"
 
 body.appendChild(video);
 
@@ -82,19 +83,30 @@ body.appendChild(video);
 
 // *******************************************************************//
 
+document.addEventListener("DOMContentLoaded", function () {
+let sec3 = document.getElementById("sec3");
+sec3.style.opacity  = "0";
+sec3.style.transition = "opacity 1s ease-in-out";
+
+setTimeout(() => {
+    sec3.style.opacity = "1";
+}, 3000);
+
+});
+
 setTimeout(() => {
     
 let characters = {
     image1: "https://www.fightersgeneration.com/characters/alex-shirtrip.gif",
-    image2: "https://www.fightersgeneration.com/news2023/char3/bob-wilson-realbout2-taunt.gif",
-    image3: "https://www.fightersgeneration.com/characters5/blake-belladonna-artwork_small.png",
-    image4: "https://www.fightersgeneration.com/nz7/char/breakers/condor-breakers-revenge-art3.png",
-    image5: "https://www.fightersgeneration.com/characters4/chung-kiz_small.jpg",
+    image2: "https://www.fightersgeneration.com/characters/dio-walkf3.gif",
+    image3: "https://www.fightersgeneration.com/characters2/k-firefix1.gif",
+    image4: "https://www.fightersgeneration.com/nz7/char/breakers/condor/condor-breakers-win.gif",
+    image5: "https://www.fightersgeneration.com/np7/char/gifs/gai/gai-intro.gif",
     image6: "https://www.fightersgeneration.com/characters3/spidey-whateva.gif",
-    image7: "https://www.fightersgeneration.com/characters4/the-flash-puzzle-and-dragons-artwork_small.jpg",
-    image8: "https://www.fightersgeneration.com/characters/venom-mc.gif",
-    image9: "https://www.fightersgeneration.com/characters4/white-realbout-dominantedmind-pissed_small.png",
-    image10: "https://www.fightersgeneration.com/characters2/jill-bigshinkiro_small.jpg",
+    image7: "https://www.fightersgeneration.com/characters4/yashiro-heavykick.gif",
+    image8: "https://www.fightersgeneration.com/characters/venom-wav.gif",
+    image9: "https://www.fightersgeneration.com/characters4/tamtam-headhit.gif",
+    image10: "https://www.fightersgeneration.com/characters2/jill-hp.gif",
 }
 
 
@@ -127,16 +139,30 @@ for (let key in characters) {
     container.appendChild(box);
 }
 
+
+let characters2 = {
+    image1: "https://www.fightersgeneration.com/np7/char/gifs/alex/alex-cfe-block.gif",
+    image2: "https://www.fightersgeneration.com/characters/dio-walkb3.gif",
+    image3: "https://www.fightersgeneration.com/characters2/snk-k.gif",
+    image4: "https://www.fightersgeneration.com/nz7/char/breakers/condor/New%20folder/condor-breakers-special-grab.gif",
+    image5: "https://www.fightersgeneration.com/np7/char/gifs/gai/gai-block.gif",
+    image6: "https://www.fightersgeneration.com/characters3/spidey-niceshot.gif",
+    image7: "https://www.fightersgeneration.com/characters4/yashiro-stance-alt.gif",
+    image8: "https://www.fightersgeneration.com/characters/venom-webthrow.gif",
+    image9: "https://www.fightersgeneration.com/characters4/tamtam-lowkicks.gif",
+    image10: "https://www.fightersgeneration.com/nf8/char3/jill-valentine-mvc2-win.gif",
+}
+
 // idhar ik loop chal raha he second wale boxContainer1 pe
 
 let mycontainer = document.getElementById("boxContainer1");
 
-for (let key in characters) {
+for (let key in characters2) {
     let box = document.createElement("div");
     box.classList.add("box");
     
     let img = document.createElement("img");
-    img.src = characters[key];
+    img.src = characters2[key];
 
     img.addEventListener("click", function(){
         let bigCharsec = document.getElementById("bigCharsec");
@@ -148,7 +174,7 @@ for (let key in characters) {
             document.body.appendChild(bigCharsec);
         }
 
-        bigCharsec.innerHTML = `<img src="${characters[key]}" alt="">`;
+        bigCharsec.innerHTML = `<img src="${characters2[key]}" alt="">`;
     })
     
     box.appendChild(img);

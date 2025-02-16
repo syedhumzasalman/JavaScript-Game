@@ -24,6 +24,12 @@ body{
     display: flex;
     justify-content:space-between;
     align-items: end;
+    position: relative;
+}
+
+.vs{
+    position: absolute;
+    left: 230px;
 }
 
 .bigCharone{
@@ -31,11 +37,29 @@ body{
     height: 100%;
     width: 40%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .bigCharone img {
+    /* background-color: beige; */
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+
+.bigCharone1{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigCharone1 img {
+    /* background-color: beige; */
     height: 100%;
     width: auto;
     object-fit: cover;
@@ -54,11 +78,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid rgb(167, 161, 161); */
     overflow: hidden;
 }
 .box img {
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: cover;
 }
