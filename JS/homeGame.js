@@ -4,9 +4,9 @@ window.onload = function() {
     let audio = document.getElementById("backgroundAudio");
     let button = document.getElementById("toggleButton");
 
-    let playPromise = audio.play();
-        if (playPromise !== undefined) {
-            playPromise.then(() => {
+    let pleasePlay = audio.play();
+        if (pleasePlay !== undefined) {
+            pleasePlay.then(() => {
                 audio.muted = false;
                 button.innerText = "🔇 Mute";
             })
@@ -50,3 +50,4 @@ video.style.objectFit = "cover";
 video.style.zIndex = "-1";
 
 body.appendChild(video);
+

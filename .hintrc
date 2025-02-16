@@ -9,6 +9,7 @@
         "marquee": "off"
       }
     ],
-    "no-inline-styles": "off"
+    "no-inline-styles": "off",
+    "create-element-svg": "off"
   }
 }
