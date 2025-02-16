@@ -62,7 +62,7 @@ body{
 .bigCharone1 img {
     /* background-color: beige; */
     height: 100%;
-    width: 100%;
+    width: auto;
     object-fit: cover;
 }
 
