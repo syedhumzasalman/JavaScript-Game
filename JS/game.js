@@ -97,7 +97,7 @@ window.addEventListener("keydown", function(event){
             player1Img.src = "https://www.fightersgeneration.com/characters4/yashiro-2k3stance.gif";
         }
         if (player1Img.src.includes("https://www.fightersgeneration.com/characters/venom-wav.gif")) {
-            player1Img.src = "https://www.fightersgeneration.com/characters/venom-smile.gif";
+            player1Img.src = "https://www.fightersgeneration.com/characters/venom-v.gif";
         }
         if (player1Img.src.includes("https://www.fightersgeneration.com/characters4/tamtam-headhit.gif")) {
             player1Img.src = "https://www.fightersgeneration.com/characters4/snk-tamtam.gif";

@@ -156,7 +156,7 @@ let characters2 = {
     image5: "https://www.fightersgeneration.com/np7/char/gifs/gai/gai-block.gif",
     image6: "https://www.fightersgeneration.com/characters3/spidey-niceshot.gif",
     image7: "https://www.fightersgeneration.com/characters4/yashiro-stance-alt.gif",
-    image8: "https://www.fightersgeneration.com/characters/venom-webthrow.gif",
+    image8: "https://www.fightersgeneration.com/characters/venom-v.gif",
     image9: "https://www.fightersgeneration.com/characters4/tamtam-lowkicks.gif",
     image10: "https://www.fightersgeneration.com/nf8/char3/jill-valentine-mvc2-win.gif",
 }
