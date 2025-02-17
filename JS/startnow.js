@@ -25,7 +25,6 @@ window.onload = function() {
  
         if (audio.paused) {
             audio.play();
-            body.appendChild(video);
         }
     });
 };
@@ -36,48 +35,50 @@ window.onload = function() {
 
 
 
-let body = document.body;
-let image = document.createElement("img");
+setTimeout(() => {
+    document.body.innerHTML += `
+        <img 
+            src="images/img2.jpg" 
+            style="
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                z-index: -1;
+            "
+            id="tempImage"
+        />
+    `;
 
-setTimeout(function() {
-    image.src = "images/img2.jpg";
-    image.style.position = "fixed";
-    image.style.top = "0";
-    image.style.left = "0";
-    image.style.width = "100vw";
-    image.style.height = "100vh";
-    image.style.objectFit = "cover";
-    image.style.zIndex = "-1";
+    setTimeout(() => {
+        document.getElementById("tempImage")?.remove();
+    }, 3000);
 
-    body.appendChild(image);
-},);
+}, 0);
 
-body.appendChild(image);
-
-setTimeout(function() {
-    body.removeChild(image);
-}, 3000);
 
 // ***********************************************************************//
 
-body = document.body;
-
-let video = document.createElement("video");
-
-video.src = "Videos/startnow-background.mp4";
-video.autoplay = true;
-video.loop = true;
-video.muted = true;
-video.style.position = "fixed";
-video.style.top = "0";
-video.style.left = "0";
-video.style.width = "100vw";
-video.style.height = "100vh";
-video.style.objectFit = "cover";
-video.style.zIndex = "-1";
-video.style.filter = "grayscale()"
-
-body.appendChild(video);
+document.body.innerHTML += `
+    <video 
+        src="Videos/startnow-background.mp4" 
+        autoplay 
+        loop 
+        muted
+        style="
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            filter: grayscale(100%);
+        "
+    ></video>
+`;
 
 
 
@@ -124,29 +125,27 @@ let bigCharone = document.getElementById("bigCharone");
 
 // idhar ik loop chal raha he phale wale boxContainer pe
 
-for (let key in characters) {
-    let box = document.createElement("div");
-    box.classList.add("box");
-    
-    let img = document.createElement("img");
-    img.src = characters[key];
-    
-    img.addEventListener("click", function(){
 
-        if(!bigCharone){
-            bigCharone = document.createElement("div");
-            bigCharone.id = "bigCharone";
-            bigCharone.classList.add("bigCharone");
-            document.body.appendChild(bigCharone);
+container.innerHTML = Object.keys(characters).map(key => `
+    <div class="box">
+        <img src="${characters[key]}" alt="">
+    </div>
+`).join("");
+
+
+document.querySelectorAll(".box img").forEach(img => {
+    img.addEventListener("click", (e) => {
+
+        if (!document.getElementById("bigCharone")) {
+            document.body.innerHTML += `<div id="bigCharone" class="bigCharone"></div>`;
         }
 
-        bigCharone.innerHTML = `<img src="${characters[key]}" alt="">`;
-    })
-    
-    box.appendChild(img);
-    container.appendChild(box);
-}
 
+        document.getElementById("bigCharone").innerHTML = `<img src="${e.target.src}" alt="">`;
+    });
+});
+
+});
 
 let characters2 = {
     image1: "https://www.fightersgeneration.com/np7/char/gifs/alex/alex-cfe-block.gif",
@@ -166,30 +165,29 @@ let characters2 = {
 let mycontainer = document.getElementById("boxContainer1");
 let bigCharsec = document.getElementById("bigCharsec");
 
-for (let key in characters2) {
-    let box = document.createElement("div");
-    box.classList.add("box");
+setTimeout(() => {
     
-    let img = document.createElement("img");
-    img.src = characters2[key];
+    mycontainer.innerHTML = Object.keys(characters2).map(key => `
+        <div class="box">
+            <img src="${characters2[key]}" alt="">
+        </div>
+    `).join("");
 
-    img.addEventListener("click", function(){
-
-        if(!bigCharsec){
-            bigCharsec = document.createElement("div");
-            bigCharsec.id = "bigCharone";
-            bigCharsec.classList.add("bigCharone");
-            document.body.appendChild(bigCharsec);
-        }
-
-        bigCharsec.innerHTML = `<img src="${characters2[key]}" alt="">`;
-    })
     
-    box.appendChild(img);
-    mycontainer.appendChild(box);
-}
+    document.querySelectorAll(".box img").forEach(img => {
+        img.addEventListener("click", (e) => {
+            
+            if (!document.getElementById("bigCharsec")) {
+                document.body.innerHTML += `<div id="bigCharsec" class="bigCharone"></div>`;
+            }
+
+        
+            document.getElementById("bigCharsec").innerHTML = `<img src="${e.target.src}" alt="">`;
+        });
+    });
 
 }, 3000);
+
 
 
 let slocation = document.getElementById("slocation");
