@@ -73,17 +73,30 @@
         width: auto;
         object-fit: cover;
       }
+
+      .player {
+        position: absolute;
+        bottom: 20px;
+        width: 200px;
+      }
+      #player1 {
+        left: 100px; 
+      }
+
+      #player2 {
+        right: 100px; 
+      }
     </style>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
         <div class="col big-char">
-          <div id="player1" class="bigCharone">
+          <div id="player1" class="bigCharone player">
             <img src="" alt="" />
           </div>
 
-          <div id="player2" class="bigCharone1">
+          <div id="player2" class="bigCharone1 player">
             <img src="" alt="" />
           </div>
         </div>
