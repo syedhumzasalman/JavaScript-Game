@@ -1,3 +1,4 @@
+document.cookie = "username=JohnDoe; Secure; SameSite=None";
 document.title = "Game Start"
 
 
@@ -52,7 +53,7 @@ window.addEventListener("keydown", function(event){
 
         if (player1Img.src.includes("https://www.fightersgeneration.com/characters/alex-shirtrip.gif") || player1Img.src.includes("https://www.fightersgeneration.com/characters/alex-ts-stance.gif")) {
             player1Img.src = "https://www.fightersgeneration.com/characters/alex-ts-stance.gif";
-            if(event.keyCode === 32){
+            if(event.keyCode === 84){
                 player1Img.src = "https://www.fightersgeneration.com/characters/alex-jump-forward.gif"
                 setTimeout(function () {
                     player1Img.src = "https://www.fightersgeneration.com/characters/alex-ts-stance.gif";
@@ -78,33 +79,282 @@ window.addEventListener("keydown", function(event){
             }
             
         }
-        if (player1Img.src.includes("https://www.fightersgeneration.com/characters/dio-walkf3.gif")) {
+
+
+        // **************************************************************
+
+
+
+        if (player1Img.src.includes("https://www.fightersgeneration.com/characters/dio-walkf3.gif") || player1Img.src.includes("https://www.fightersgeneration.com/characters/dio-walkf.gif")) {
             player1Img.src = "https://www.fightersgeneration.com/characters/dio-walkf.gif";
+            if(event.keyCode === 84){
+                player1Img.src = "https://www.fightersgeneration.com/characters/dio-spinkick.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters/dio-walkf.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 81){
+                player1Img.src = "https://www.fightersgeneration.com/characters/dio-rolling.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters/dio-walkf.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 87){
+                player1Img.src = "https://www.fightersgeneration.com/characters/dio-air.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters/dio-walkf.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 69){
+                player1Img.src = "https://www.fightersgeneration.com/characters/dio-c2.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters/dio-walkf.gif";
+                }, 1000);
+            }
         }
-        if (player1Img.src.includes("https://www.fightersgeneration.com/characters2/k-firefix1.gif")) {
+
+        // **************************************************************
+
+        if (player1Img.src.includes("https://www.fightersgeneration.com/characters2/k-firefix1.gif") || player1Img.src.includes("https://www.fightersgeneration.com/characters2/k-stance1.gif")) {
             player1Img.src = "https://www.fightersgeneration.com/characters2/k-stance1.gif";
+            if(event.keyCode === 84){
+                player1Img.src = "https://www.fightersgeneration.com/characters2/k-jumps.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters2/k-stance1.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 81){
+                player1Img.src = "https://www.fightersgeneration.com/characters2/k-upper.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters2/k-stance1.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 87){
+                player1Img.src = "https://www.fightersgeneration.com/characters2/k-spinhookkick.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters2/k-stance1.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 69){
+                player1Img.src = "https://www.fightersgeneration.com/characters2/k-crouchpunch.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters2/k-stance1.gif";
+                }, 1000);
+            }
         }
-        if (player1Img.src.includes("https://www.fightersgeneration.com/nz7/char/breakers/condor/condor-breakers-win.gif")) {
+
+        // **************************************************************
+
+        if (player1Img.src.includes("https://www.fightersgeneration.com/nz7/char/breakers/condor/condor-breakers-win.gif") || player1Img.src.includes("https://www.fightersgeneration.com/nz7/char/breakers/condor/condor-breakers-taunt.gif")) {
             player1Img.src = "https://www.fightersgeneration.com/nz7/char/breakers/condor/condor-breakers-taunt.gif";
+            if(event.keyCode === 84){
+                player1Img.src = "https://www.fightersgeneration.com/nz7/char/breakers/condor/New%20folder/condor-breakers-special-grab.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/nz7/char/breakers/condor/condor-breakers-taunt.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 81){
+                player1Img.src = "https://www.fightersgeneration.com/nz7/char/breakers/condor/New%20folder/condor-breakers-upper.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/nz7/char/breakers/condor/condor-breakers-taunt.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 87){
+                player1Img.src = "https://www.fightersgeneration.com/nz7/char/breakers/condor/New%20folder/condor-breakers-special-grab2.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/nz7/char/breakers/condor/condor-breakers-taunt.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 69){
+                player1Img.src = "https://www.fightersgeneration.com/nz7/char/breakers/condor/New%20folder/condor-breakers-sliding-dropkick.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/nz7/char/breakers/condor/condor-breakers-taunt.gif";
+                }, 1000);
+            }
         }
-        if (player1Img.src.includes("https://www.fightersgeneration.com/np7/char/gifs/gai/gai-intro.gif")) {
+
+        // **************************************************************
+
+        if (player1Img.src.includes("https://www.fightersgeneration.com/np7/char/gifs/gai/gai-intro.gif") ||  player1Img.src.includes("https://www.fightersgeneration.com/characters/gai-kofxistance.gif")) {
             player1Img.src = "https://www.fightersgeneration.com/characters/gai-kofxistance.gif";
+            if(event.keyCode === 84){
+                player1Img.src = "https://www.fightersgeneration.com/np7/char/gifs/gai/attacks/gai-c3.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters/gai-kofxistance.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 81){
+                player1Img.src = "https://www.fightersgeneration.com/np7/char/gifs/gai/attacks/gai-rollslam.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters/gai-kofxistance.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 87){
+                player1Img.src = "https://www.fightersgeneration.com/np7/char/gifs/gai/attacks/gai-grab.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters/gai-kofxistance.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 69){
+                player1Img.src = "https://www.fightersgeneration.com/np7/char/gifs/gai/attacks/gai-initiatesuper.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters/gai-kofxistance.gif";
+                }, 1000);
+            }
         }
-        if (player1Img.src.includes("https://www.fightersgeneration.com/characters3/spidey-whateva.gif")) {
-            player1Img.src = "https://www.fightersgeneration.com/characters3/m-spiderman.gif";
+
+        // **************************************************************
+
+        if (player1Img.src.includes("https://www.fightersgeneration.com/characters3/spidey-whateva.gif") ||  player1Img.src.includes("https://www.fightersgeneration.com/characters3/spidey-walk1.gif")) {
+            player1Img.src = "https://www.fightersgeneration.com/characters3/spidey-walk1.gif";
+            if(event.keyCode === 84){
+                player1Img.src = "https://www.fightersgeneration.com/characters3/spider-sting.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters3/spidey-walk1.gif";
+                }, 2000);
+            }
+            if(event.keyCode === 81){
+                player1Img.src = "https://www.fightersgeneration.com/characters3/m-spidey.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters3/spidey-walk1.gif";
+                }, 4000);
+            }
+            if(event.keyCode === 87){
+                player1Img.src = "https://www.fightersgeneration.com/characters3/spidey-block.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters3/spidey-walk1.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 69){
+                player1Img.src = "https://www.fightersgeneration.com/characters3/spidey-dizzied.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters3/spidey-walk1.gif";
+                }, 1000);
+            }
         }
-        if (player1Img.src.includes("https://www.fightersgeneration.com/characters4/yashiro-heavykick.gif")) {
+
+        // **************************************************************
+
+        if (player1Img.src.includes("https://www.fightersgeneration.com/characters4/yashiro-heavykick.gif") ||  player1Img.src.includes("https://www.fightersgeneration.com/characters4/yashiro-2k3stance.gif")) {
             player1Img.src = "https://www.fightersgeneration.com/characters4/yashiro-2k3stance.gif";
+            if(event.keyCode === 84){
+                player1Img.src = "https://www.fightersgeneration.com/characters4/yash-jkick.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters4/yashiro-2k3stance.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 81){
+                player1Img.src = "https://www.fightersgeneration.com/characters4/yashiro-pushups.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters4/yashiro-2k3stance.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 87){
+                player1Img.src = "https://www.fightersgeneration.com/characters4/yash-crouchattacks.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters4/yashiro-2k3stance.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 69){
+                player1Img.src = "https://www.fightersgeneration.com/characters4/yash-roll.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters4/yashiro-2k3stance.gif";
+                }, 1000);
+            }
         }
-        if (player1Img.src.includes("https://www.fightersgeneration.com/characters/venom-wav.gif")) {
+
+        // **************************************************************
+
+        if (player1Img.src.includes("https://www.fightersgeneration.com/characters/venom-wav.gif") ||  player1Img.src.includes("https://www.fightersgeneration.com/characters/venom-v.gif")) {
             player1Img.src = "https://www.fightersgeneration.com/characters/venom-v.gif";
+            if(event.keyCode === 84){
+                player1Img.src = "https://www.fightersgeneration.com/characters/venom-block.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters/venom-v.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 81){
+                player1Img.src = "https://www.fightersgeneration.com/characters/venom-mp.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters/venom-v.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 87){
+                player1Img.src = "https://www.fightersgeneration.com/characters/venom-win1.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters/venom-v.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 69){
+                player1Img.src = "https://www.fightersgeneration.com/characters/venomhit.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters/venom-v.gif";
+                }, 1000);
+            }
         }
-        if (player1Img.src.includes("https://www.fightersgeneration.com/characters4/tamtam-headhit.gif")) {
+
+        // **************************************************************
+
+        if (player1Img.src.includes("https://www.fightersgeneration.com/characters4/tamtam-headhit.gif") ||  player1Img.src.includes("https://www.fightersgeneration.com/characters4/snk-tamtam.gif")) {
             player1Img.src = "https://www.fightersgeneration.com/characters4/snk-tamtam.gif";
+            if(event.keyCode === 84){
+                player1Img.src = "https://www.fightersgeneration.com/characters4/tamtam-bk.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters4/snk-tamtam.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 81){
+                player1Img.src = "https://www.fightersgeneration.com/characters4/tamtam-swingspear.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters4/snk-tamtam.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 87){
+                player1Img.src = "https://www.fightersgeneration.com/characters4/tamtam-fireball.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters4/snk-tamtam.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 69){
+                player1Img.src = "https://www.fightersgeneration.com/characters4/tamtam-crazymove.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters4/snk-tamtam.gif";
+                }, 1000);
+            }
         }
-        if (player1Img.src.includes("https://www.fightersgeneration.com/characters2/jill-hp.gif")) {
+
+        // **************************************************************
+
+        if (player1Img.src.includes("https://www.fightersgeneration.com/characters2/jill-hp.gif") ||  player1Img.src.includes("https://www.fightersgeneration.com/characters2/jill-inkribbon.gif")) {
             player1Img.src = "https://www.fightersgeneration.com/characters2/jill-inkribbon.gif";
+            if(event.keyCode === 84){
+                player1Img.src = "https://www.fightersgeneration.com/characters2/jill-uppercut.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters2/jill-inkribbon.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 81){
+                player1Img.src = "https://www.fightersgeneration.com/characters2/jill-grenade.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters2/jill-inkribbon.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 87){
+                player1Img.src = "https://www.fightersgeneration.com/characters2/jill-lmk.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters2/jill-inkribbon.gif";
+                }, 1000);
+            }
+            if(event.keyCode === 69){
+                player1Img.src = "https://www.fightersgeneration.com/characters2/jill-knife.gif"
+                setTimeout(function () {
+                    player1Img.src = "https://www.fightersgeneration.com/characters2/jill-inkribbon.gif";
+                }, 1000);
+            }
         }
+
+        // **************************************************************
+
     
         if (event.keyCode === 68 && playerPosition <= 700 || event.keyCode === 39 && playerPosition <= 700) {
             playerPosition += 20;
