@@ -38,7 +38,7 @@ Swal.fire({
     player1.innerHTML = `<img src="${player1Character}" alt="Player 1">`
     player2.innerHTML = `<img src="${player2Character}" alt="Player 2">`
     
-}, 1000); 
+}, 2000); 
 
 };
 
@@ -368,3 +368,27 @@ window.addEventListener("keydown", function(event){
 
     });
     
+    function showControls() {
+        Swal.fire({
+            title: 'Game Controls',
+            text: 'Here are your character controls:',
+            icon: 'info',
+            confirmButtonText: 'Got it!',
+            html: `
+                <div style="font-size: 18px; font-weight: bold;">
+                    <p><strong>A</strong>: Move Left</p>
+                    <p><strong>D</strong>: Move Right</p>
+                    <p><strong>Q</strong>: Power 1</p>
+                    <p><strong>W</strong>: Power 2</p>
+                    <p><strong>E</strong>: Power 3</p>
+                    <p><strong>T</strong>: Power 4</p>
+                </div>`,
+            showCancelButton: false,
+            showConfirmButton: true,
+            background: '#f7f7f7',
+            color: '#333',
+            padding: '20px'
+        });
+    }
+
+

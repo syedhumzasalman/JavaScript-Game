@@ -75,10 +75,10 @@
       }
 
       .player {
-        position: absolute; 
-        bottom: 50px; 
-        width: 200px; 
-        transition: transform 0.1s linear; 
+        position: absolute;
+        bottom: 50px;
+        width: 200px;
+        transition: transform 0.1s linear;
       }
       #player1 {
         left: 100px;
@@ -87,12 +87,33 @@
       #player2 {
         right: 100px;
       }
+      .my-btn1 {
+        background: #a6753c;
+        color: white;
+        padding: 5px 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        clip-path: polygon(
+          10% 0%,
+          90% 0%,
+          100% 50%,
+          90% 100%,
+          10% 100%,
+          0% 50%
+        );
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
         <div class="col big-char">
+          <button onclick="showControls()" class="my-btn1">Show Controls</button>
           <div id="player1" class="bigCharone player">
             <img src="" alt="" />
           </div>
