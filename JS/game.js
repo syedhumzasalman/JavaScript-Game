@@ -6,20 +6,20 @@ let player1 = document.getElementById("player1")
 let player2 = document.getElementById("player2")
 
 window.onload = function() {
-// Swal.fire({
-//     title: 'LET THE BATTLE BEGIN!.',
-//     text: 'The stage of battle is set!',
-//     allowOutsideClick: false,
-//     didOpen: () => {
-//         Swal.showLoading();
-//     }
-// });
+Swal.fire({
+    title: 'LET THE BATTLE BEGIN!.',
+    text: 'The stage of battle is set!',
+    allowOutsideClick: false,
+    didOpen: () => {
+        Swal.showLoading();
+    }
+});
 
     setTimeout(() => {
         Swal.close();
 
-    // let fightAudio = new Audio("../Videos/fight-sound-effect-230560.mp3");
-    // fightAudio.play();
+    let fightAudio = new Audio("../Videos/fight-sound-effect-230560.mp3");
+    fightAudio.play();
 
 
     let player1Character = localStorage.getItem("player1Character");
@@ -46,7 +46,7 @@ window.onload = function() {
 let playerPosition = 100;
 
 window.addEventListener("keydown", function(event){
-    console.log("test" , event.keyCode);
+    // console.log("test" , event.keyCode);
         
         let player1Img = player1.querySelector("img");
     
@@ -80,9 +80,7 @@ window.addEventListener("keydown", function(event){
             
         }
 
-
-        // **************************************************************
-
+     // **************************************************************
 
 
         if (player1Img.src.includes("https://www.fightersgeneration.com/characters/dio-walkf3.gif") || player1Img.src.includes("https://www.fightersgeneration.com/characters/dio-walkf.gif")) {
