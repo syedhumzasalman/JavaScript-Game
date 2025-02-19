@@ -1,3 +1,4 @@
+document.cookie = "session=abc123; Secure; HttpOnly; SameSite=None";
     document.title = "Start Now";
 
     let audio = document.getElementById("backgroundAudio");
@@ -133,7 +134,7 @@
     `).join("");
 
 
-    document.querySelectorAll(".box img").forEach(img => {
+    document.querySelectorAll("#boxContainer .box img").forEach(img => {
         img.addEventListener("click", (e) => {
 
             if (!document.getElementById("bigCharone")) {
@@ -174,7 +175,7 @@
         `).join("");
 
         
-        document.querySelectorAll(".box img").forEach(img => {
+        document.querySelectorAll("#boxContainer1 .box img").forEach(img => {
             img.addEventListener("click", (e) => {
                 
                 if (!document.getElementById("bigCharsec")) {
